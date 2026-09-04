@@ -24,3 +24,8 @@ output "generated_dkim_cname_record" {
   value     = oci_email_dkim.dkim[0].cname_record_value
   sensitive = false
 }
+output "generated_dkim_record_name" {
+  depends_on = [ oci_email_dkim.dkim[0]]
+  value     = oci_email_dkim.dkim[0].dns_subdomain_name
+  sensitive = false
+}
