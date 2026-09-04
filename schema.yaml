@@ -13,6 +13,8 @@ variableGroups:
   variables:
   - tenancy_ocid
   - current_user_ocid
+  - fingerprint
+  - private_key_path
 
 - title: ${Messages.solutionsHub.requiredConfig()}
   visible: true

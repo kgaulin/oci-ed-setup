@@ -3,8 +3,12 @@
 
 variable "tenancy_ocid" {}
 variable "current_user_ocid" {}
-variable "fingerprint" {}
-variable "private_key_path" {}
+variable "fingerprint" {
+  default = ""
+}
+variable "private_key_path" {
+  default = ""
+}
 variable "compartment_ocid" {}
 variable "region" {}
 
